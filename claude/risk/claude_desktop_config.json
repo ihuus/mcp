@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ihuus-risk": {
+      "url": "https://api.ihuus.com/v1/mcp/risk/",
+      "headers": {
+        "Authorization": "Bearer $IHUUS_API_KEY"
+      }
+    },
+    "ihuus-geospatial": {
+      "url": "https://api.ihuus.com/v1/mcp/tools/",
+      "headers": {
+        "Authorization": "Bearer $IHUUS_API_KEY"
+      }
+    }
+  }
+}
