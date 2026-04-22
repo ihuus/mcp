@@ -1,0 +1,19 @@
+{
+  "name": "ihuus-demographics",
+  "version": "1.1.0",
+  "description": "Provides tools for assessing demographic factors like insurance coverage, political lean, and age profiles via the iHuus Demographics API.",
+  "mcpServers": {
+    "ihuus-demographics": {
+      "url": "https://api.ihuus.com/v1/mcp/demographics/",
+      "headers": {
+        "Authorization": "Bearer $IHUUS_API_KEY"
+      }
+    },
+    "ihuus-geospatial": {
+      "url": "https://api.ihuus.com/v1/mcp/tools/",
+      "headers": {
+        "Authorization": "Bearer $IHUUS_API_KEY"
+      }
+    }
+  }
+}
