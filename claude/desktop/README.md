@@ -18,8 +18,8 @@ risk, air quality, noise, demographics, and more for any US address.
 
 2. **Open** the file — Claude Desktop will show an install dialog.
 
-3. **Paste your iHuus API key** when prompted. Your key is stored securely and never
-   leaves your machine.
+3. **Paste your iHuus API key** when prompted. Your key is stored securely and
+   and is only sent to api.ihuus.com.
 
 4. **Verify** the extension is enabled: open Claude Desktop → **Settings** → look for
    **iHuus Neighborhood Intelligence** in the extensions list. Toggle it on if needed.
