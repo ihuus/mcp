@@ -9,18 +9,8 @@ visual appeal, dog friendliness, and urban-rural classification.
 
 ## Setup
 
-```bash
-export IHUUS_API_KEY=your_ihuus_api_key_here
-export GEMINI_API_KEY=your_gemini_api_key_here
-
-gemini -e gemini-extension.json
-```
-
-Activate the skill at the start of your session:
-
-```
-/skill skills/neighborhood-vibe/SKILL.md
-```
+See [`gemini/README.md`](../README.md) for installation instructions.
+Use `vibe` as the `<domain>` value.
 
 ---
 
@@ -48,5 +38,6 @@ Is 90210 Beverly Hills more of an urban or suburban vibe?
 
 Find me the most private, low-density neighborhood near downtown Austin, TX.
 
-Rate the visual appeal and curb appeal of 1600 Pennsylvania Ave NW, Washington, DC.
+Rate the visual appeal of 450 Serra Mall, Stanford, CA.
+```
 ```
