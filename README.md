@@ -9,7 +9,7 @@ for building AI-powered neighborhood analysis agents. Connect
 [Gemini CLI](https://github.com/google-gemini/gemini-cli) or
 [Claude Desktop](https://claude.ai/download) to remote MCP servers that provide
 walkability scores, school ratings, flood risk, air quality, demographics, and more for
-any US address — no backend code required.
+any address (CA/TX for now) — no backend code required.
 
 **[Documentation](https://docs.ihuus.com/)** · **[Plans & Pricing](https://ihuus.com/pricing)**
 
@@ -58,8 +58,8 @@ gemini
 
 ## Extension Coverage
 
-| Domain           | Tools                                                                  | Coverage                        |
-| ---------------- | ---------------------------------------------------------------------- | ------------------------------- |
+| Domain           | Tools                                                                  | Coverage                         |
+| ---------------- | ---------------------------------------------------------------------- | -------------------------------- |
 | **Demographics** | Insurance coverage · Ideological lean · Age profile                    | CA and TX                        |
 | **Environment**  | Noise levels · Industrial proximity · Air quality                      | CA and TX                        |
 | **Risk**         | Flood safety · Fire risk                                               | Flood: CA and TX · Fire: CA only |
