@@ -1,100 +1,58 @@
-# Claude Desktop Extensions
+# Claude Desktop Extension
 
-Ready-to-use [Claude Desktop](https://claude.ai/download) MCP configurations for the
-iHuus Neighborhood Intelligence API.
+One-click MCP bundle (`.mcpb`) for [Claude Desktop](https://claude.ai/download).
+Connects Claude to 18 neighborhood analysis tools and 5 MCP prompts — walkability,
+school ratings, flood and fire risk, air quality, noise, demographics, and more for any
+US address.
 
 **[Documentation](https://docs.ihuus.com/)** · **[Plans & Pricing](https://ihuus.com/pricing)**
 
----
-
-## Setup
-
-### 1. Set your API key
-
-Claude Desktop reads environment variables from your shell. Export `IHUUS_API_KEY` in
-your shell profile so it is available when Claude Desktop launches:
-
-**macOS / Linux** — add to `~/.zshrc`, `~/.bashrc`, or equivalent:
-
-```bash
-export IHUUS_API_KEY=your_ihuus_api_key_here
-```
-
-**Windows** — set via System Properties → Environment Variables, or in PowerShell:
-
-```powershell
-[Environment]::SetEnvironmentVariable("IHUUS_API_KEY", "your_key_here", "User")
-```
-
-### 2. Find your Claude Desktop config file
-
-| OS | Path |
-|---|---|
-| macOS | `~/Library/Application Support/Claude/claude_desktop_config.json` |
-| Windows | `%APPDATA%\Claude\claude_desktop_config.json` |
-| Linux | `~/.config/Claude/claude_desktop_config.json` |
-
-Create the file if it does not exist.
-
-### 3. Add an MCP server
-
-Open `claude/schools/claude_desktop_config.json` (or whichever domain you want) and
-**merge** its `mcpServers` block into your Claude Desktop config:
-
-```json
-{
-  "mcpServers": {
-    "ihuus-schools": { ... },
-    "ihuus-geospatial": { ... }
-  }
-}
-```
-
-If you already have other MCP servers configured, add the new keys inside the existing
-`mcpServers` object — do not replace the whole file.
-
-To load all domains at once, use `claude/full/claude_desktop_config.json`.
-
-### 4. Restart Claude Desktop
-
-Changes to `claude_desktop_config.json` take effect after restarting the app.
+> Requires an `api_advanced` plan — [get one at ihuus.com/pricing](https://ihuus.com/pricing).
 
 ---
 
-## System Prompts (Claude Projects)
+## Install
 
-Each folder also contains a `SYSTEM_PROMPT.md` file. Paste its contents into the
-**custom instructions** field of a [Claude Project](https://support.anthropic.com/en/articles/9517075-what-are-projects)
-to give the agent domain expertise and consistent behaviour across conversations.
+1. **Download** [`mcpb.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/mcpb.mcpb)
+   (or find it in `claude/desktop/` after cloning the repo).
+2. **Open** the file — Claude Desktop shows an install dialog.
+3. **Paste your iHuus API key** when prompted.
+4. **Verify** the extension is enabled under **Settings** → extensions list.
+
+See [`claude/desktop/README.md`](desktop/README.md) for troubleshooting and full tool
+reference.
 
 ---
 
-## Available Extensions
+## Available Tools
 
-| Folder | Tools included |
-|---|---|
-| `demographics/` | Insurance coverage · Ideological lean · Age profile |
-| `environment/` | Noise levels · Industrial proximity · Air quality |
-| `risk/` | Flood safety · Fire risk (CA only) |
-| `schools/` | School search · District lookup · School detail |
-| `vibe/` | Walkability · Privacy · Visual appeal · Dog friendliness · Urban–rural |
-| `full/` | All of the above + geocoding |
+| Domain           | Tools                                                                  | Coverage                        |
+| ---------------- | ---------------------------------------------------------------------- | ------------------------------- |
+| **Vibe**         | Walkability · Privacy · Visual appeal · Dog friendliness · Urban–rural | National                        |
+| **Environment**  | Noise levels · Industrial proximity · Air quality                      | National                        |
+| **Risk**         | Flood safety · Fire risk                                               | Flood: national · Fire: CA only |
+| **Schools**      | School search · District lookup · School detail                        | CA and TX only                  |
+| **Demographics** | Insurance coverage · Ideological lean · Age profile                    | National                        |
+| **Geospatial**   | Address geocoding (used automatically by all tools)                    | National                        |
+
+> **Data availability:** School data covers **California and Texas**. Fire risk covers
+> **California only** (CALFIRE). All other tools have national US coverage.
 
 ---
 
 ## Example Prompts
 
 ```
-Find top-rated elementary schools within 2 miles of 250 Mariposa Ave, Mountain View, CA.
+What's the walkability and noise level near 250 Mariposa Ave, Mountain View, CA?
 
-How is the air quality and noise level near 1600 Pennsylvania Ave NW, Washington, DC?
+Find top-rated elementary schools within 2 miles of 450 Serra Mall, Stanford, CA.
 
-Is 123 Riverside Dr, Sacramento, CA at high flood or fire risk?
+Is 1100 Congress Ave, Austin, TX at high flood or fire risk?
 
-Give me a full neighborhood report for 450 Serra Mall, Stanford, CA.
-
-How walkable and dog-friendly is the area around 1100 Congress Ave, Austin, TX?
+Give me a full neighborhood report for 250 Mariposa Ave, Mountain View, CA.
 ```
+
+Alternatively, type /ihuus... in Claude Desktop and check out our prompt templates.
 
 ---
 
