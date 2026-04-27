@@ -13,7 +13,7 @@ risk, air quality, noise, demographics, and more for any US address.
 ## Install
 
 1. **Download** the latest
-   [`mcpb.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/mcpb.mcpb) file
+   [`ihuus-neighborhood-intelligence.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/ihuus-neighborhood-intelligence.mcpb) file
    (or find it in `claude/desktop/` after cloning the repo).
 
 2. **Open** the file — Claude Desktop will show an install dialog.
@@ -100,8 +100,8 @@ cd claude/desktop
 npm install --production
 
 # Pack the bundle
-mcpb pack
+mcpb pack . ihuus-neighborhood-intelligence.mcpb
 ```
 
-This produces a new `mcpb.mcpb` file in the current directory. Open it to install
+This produces a new `.mcpb` file in the current directory. Open it to install
 the updated bundle in Claude Desktop.
