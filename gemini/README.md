@@ -13,13 +13,13 @@ iHuus Neighborhood Intelligence API.
 | ---------------- | --------------------------------------- | ---------------------- | ---------------------------------------------------------------------- |
 | **Demographics** | [`gemini/demographics/`](demographics/) | `demographics-advisor` | Insurance coverage · Ideological lean · Age profile                    |
 | **Environment**  | [`gemini/environment/`](environment/)   | `environment-advisor`  | Noise levels · Industrial proximity · Air quality                      |
-| **Risk**         | [`gemini/risk/`](risk/)                 | `risk-advisor`         | Flood safety (national) · Fire risk (CA only)                          |
+| **Risk**         | [`gemini/risk/`](risk/)                 | `risk-advisor`         | Flood safety · Fire risk (CA only)                                    |
 | **Schools**      | [`gemini/schools/`](schools/)           | `schools-expert`       | School search · District lookup · School detail                        |
 | **Vibe**         | [`gemini/vibe/`](vibe/)                 | `neighborhood-vibe`    | Walkability · Privacy · Visual appeal · Dog friendliness · Urban–rural |
 | **Full**         | [`gemini/full/`](full/)                 | `neighborhood-analyst` | All of the above + geocoding                                           |
 
-> **Data availability:** School data covers **California and Texas**. Fire risk covers
-> **California only** (CALFIRE). All other tools have national US coverage.
+> **Data availability:** All tools currently cover **California and Texas**. Fire risk
+> covers **California only** (CALFIRE).
 
 ---
 

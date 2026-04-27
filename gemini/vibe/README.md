@@ -40,4 +40,3 @@ Find me the most private, low-density neighborhood near downtown Austin, TX.
 
 Rate the visual appeal of 450 Serra Mall, Stanford, CA.
 ```
-```

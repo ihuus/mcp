@@ -2,8 +2,8 @@
 
 Assess natural hazard risk — flood safety and wildfire risk — for any US address.
 
-> **Data availability:** Flood risk has national US coverage. Fire risk data is available
-> for **California only** (CALFIRE).
+> **Data availability:** All risk tools cover **California and Texas**. Fire risk data
+> is available for **California only** (CALFIRE).
 
 **[Documentation](https://docs.ihuus.com/)** · **[Plans & Pricing](https://ihuus.com/pricing)**
 
@@ -20,7 +20,7 @@ Use `risk` as the `<domain>` value.
 
 | Tool             | Description                                                         | Coverage        |
 | ---------------- | ------------------------------------------------------------------- | --------------- |
-| `flood`          | FEMA flood hazard designations and risk score                       | National        |
+| `flood`          | FEMA flood hazard designations and risk score                       | CA and TX       |
 | `fire`           | CALFIRE Fire Hazard Severity Zone score                             | California only |
 | `geocode-single` | Convert an address to coordinates (required before all other tools) | National        |
 

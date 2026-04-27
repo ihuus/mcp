@@ -18,7 +18,7 @@ Use `demographics` as the `<domain>` value.
 
 | Tool                 | Description                                                         |
 | -------------------- | ------------------------------------------------------------------- |
-| `insurance-coverage` | Share of residents with health insurance (national coverage)        |
+| `insurance-coverage` | Share of residents with health insurance                             |
 | `ideological-lean`   | Conservative–liberal political lean score                           |
 | `population-profile` | Age mix from young adults to seniors                                |
 | `geocode-single`     | Convert an address to coordinates (required before all other tools) |

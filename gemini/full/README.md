@@ -3,8 +3,8 @@
 All five iHuus intelligence domains in one extension: demographics, environment, risk,
 schools, and vibe. The fastest way to generate a complete neighborhood analysis report.
 
-> **Data availability:** School data covers **California and Texas**. Fire risk covers
-> **California only** (CALFIRE). All other tools have national US coverage.
+> **Data availability:** All tools currently cover **California and Texas**. Fire risk
+> covers **California only** (CALFIRE).
 
 **[Documentation](https://docs.ihuus.com/)** · **[Plans & Pricing](https://ihuus.com/pricing)**
 

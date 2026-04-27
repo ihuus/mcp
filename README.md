@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-brightgreen.svg)](https://modelcontextprotocol.io/)
-[![API AI Pro plan](https://img.shields.io/badge/plan-API_AI_Pro-orange.svg)](https://ihuus.com/pricing)
+[![API AI Pro plan](https://img.shields.io/badge/plan-API%20AI%20Pro-orange.svg)](https://ihuus.com/pricing)
 
 Ready-to-use [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) extensions
 for building AI-powered neighborhood analysis agents. Connect
@@ -60,18 +60,18 @@ gemini
 
 | Domain           | Tools                                                                  | Coverage                        |
 | ---------------- | ---------------------------------------------------------------------- | ------------------------------- |
-| **Demographics** | Insurance coverage · Ideological lean · Age profile                    | National                        |
-| **Environment**  | Noise levels · Industrial proximity · Air quality                      | National                        |
-| **Risk**         | Flood safety · Fire risk                                               | Flood: national · Fire: CA only |
-| **Schools**      | School search · District lookup · School detail                        | CA and TX only                  |
-| **Vibe**         | Walkability · Privacy · Visual appeal · Dog friendliness · Urban–rural | National                        |
-| **Geospatial**   | Address geocoding (used automatically by all tools)                    | National                        |
+| **Demographics** | Insurance coverage · Ideological lean · Age profile                    | CA and TX                        |
+| **Environment**  | Noise levels · Industrial proximity · Air quality                      | CA and TX                        |
+| **Risk**         | Flood safety · Fire risk                                               | Flood: CA and TX · Fire: CA only |
+| **Schools**      | School search · District lookup · School detail                        | CA and TX                        |
+| **Vibe**         | Walkability · Privacy · Visual appeal · Dog friendliness · Urban–rural | CA and TX                        |
+| **Geospatial**   | Address geocoding (used automatically by all tools)                    | CA and TX                        |
 
 - **Gemini CLI** — per-domain extensions or a full all-in-one extension
 - **Claude Desktop** — single MCPB bundle with all domains included
 
-> **Data availability:** School data covers **California and Texas**. Fire risk covers
-> **California only** (CALFIRE). All other tools have national US coverage.
+> **Data availability:** All tools currently cover **California and Texas**. Fire risk
+> covers **California only** (CALFIRE).
 
 ---
 

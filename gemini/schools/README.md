@@ -43,7 +43,4 @@ Compare school ratings for two addresses in Houston, TX.
 ```
 
 Compare school ratings for two addresses in Houston, TX.
-
-```
-
 ```
