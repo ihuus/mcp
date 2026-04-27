@@ -62,14 +62,14 @@ No API keys are sent to any third party — they go directly from your machine t
 
 ## Available Tools
 
-| Domain           | Tools                                                                  | Coverage                        |
-| ---------------- | ---------------------------------------------------------------------- | ------------------------------- |
-| **Vibe**         | Walkability · Privacy · Visual appeal · Dog friendliness · Urban–rural | National                        |
-| **Environment**  | Noise levels · Industrial proximity · Air quality                      | National                        |
-| **Risk**         | Flood safety · Fire risk                                               | Flood: national · Fire: CA only |
-| **Schools**      | School search · District lookup · School detail                        | CA and TX only                  |
-| **Demographics** | Insurance coverage · Ideological lean · Age profile                    | National                        |
-| **Geospatial**   | Address geocoding (used automatically by all tools)                    | National                        |
+| Domain           | Tools                                                                  | Coverage                         |
+| ---------------- | ---------------------------------------------------------------------- | -------------------------------- |
+| **Vibe**         | Walkability · Privacy · Visual appeal · Dog friendliness · Urban–rural | CA and TX                        |
+| **Environment**  | Noise levels · Industrial proximity · Air quality                      | CA and TX                        |
+| **Risk**         | Flood safety · Fire risk                                               | Flood: CA and TX · Fire: CA only |
+| **Schools**      | School search · District lookup · School detail                        | CA and TX                        |
+| **Demographics** | Insurance coverage · Ideological lean · Age profile                    | CA and TX                        |
+| **Geospatial**   | Address geocoding (used automatically by all tools)                    | CA and TX                        |
 
 ---
 
