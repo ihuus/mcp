@@ -13,7 +13,7 @@ risk, air quality, noise, demographics, and more for any US address.
 ## Install
 
 1. **Download** the latest
-   [`mcpb.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/mcpb.mcpb) file
+   [`ihuus-neighborhood-intelligence.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/ihuus-neighborhood-intelligence.mcpb) file
    (or find it in `claude/desktop/` after cloning the repo).
 
 2. **Open** the file — Claude Desktop will show an install dialog.
@@ -75,15 +75,19 @@ No API keys are sent to any third party — they go directly from your machine t
 
 ## Example Prompts
 
+Try typing a question directly:
+
 ```
 What's the walkability and noise level near 250 Mariposa Ave, Mountain View, CA?
 
 Find top-rated elementary schools within 2 miles of 450 Serra Mall, Stanford, CA.
 
 Is 1100 Congress Ave, Austin, TX at high flood or fire risk?
-
-Give me a full neighborhood report for 250 Mariposa Ave, Mountain View, CA.
 ```
+
+Or use a pre-made MCP prompt: click the **+** button in the chat input → **Connectors**
+→ select **iHuus Neighborhood Report**. Enter an address and get a full HTML
+neighborhood intelligence report.
 
 ---
 
@@ -100,8 +104,9 @@ cd claude/desktop
 npm install --production
 
 # Pack the bundle
-mcpb pack
+mcpb pack . ihuus-neighborhood-intelligence.mcpb
 ```
 
-This produces a new `mcpb.mcpb` file in the current directory. Open it to install
+This produces `ihuus-neighborhood-intelligence.mcpb` in the current directory (the
+second argument controls the output filename). Open it to install
 the updated bundle in Claude Desktop.

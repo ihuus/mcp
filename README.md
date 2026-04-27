@@ -37,7 +37,7 @@ any address (CA/TX for now) — no backend code required.
 
 **Claude Desktop** — no clone needed:
 
-1. Download [`mcpb.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/mcpb.mcpb)
+1. Download [`ihuus-neighborhood-intelligence.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/ihuus-neighborhood-intelligence.mcpb)
    and open it.
 2. Paste your iHuus API key when prompted.
 
@@ -91,7 +91,7 @@ gemini
     └── desktop/           # One-click .mcpb installer
         ├── manifest.json
         ├── server/        # Node.js stdio proxy
-        └── mcpb.mcpb      # Pre-built bundle — download and open
+        └── ihuus-neighborhood-intelligence.mcpb
 ```
 
 ---
@@ -114,7 +114,7 @@ gemini
 
 See [`claude/README.md`](claude/README.md) for detailed setup instructions.
 
-1. **Download** [`mcpb.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/mcpb.mcpb)
+1. **Download** [`ihuus-neighborhood-intelligence.mcpb`](https://github.com/ihuus/mcp/raw/main/claude/desktop/ihuus-neighborhood-intelligence.mcpb)
    and open it — Claude Desktop shows an install dialog.
 2. **Paste your iHuus API key** when prompted.
 3. **Verify** the extension is enabled under Settings → extensions list.
