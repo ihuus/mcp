@@ -208,3 +208,8 @@ __marimo__/
 
 # Ignore Github config
 .github/
+
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
