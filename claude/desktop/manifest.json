@@ -1,0 +1,70 @@
+{
+  "manifest_version": "0.3",
+  "name": "ihuus-neighborhood-intelligence",
+  "display_name": "iHuus Neighborhood Intelligence",
+  "version": "1.0.0",
+  "description": "Neighborhood and Location Intelligence: walkability, school ratings, flood and fire risk, air quality, noise, demographics, and more for any CA/TX home, neighborhood, or address.",
+  "long_description": "Neighborhood due diligence for home buyers, real estate agents, and location researchers. Connect Claude to the iHuus Neighborhood Intelligence API and get instant answers about any CA/TX address.\n\nTools across 6 domains:\n• Vibe: walkability, privacy, visual appeal, dog-friendliness, urban-rural character\n• Environment: noise levels, industrial proximity, air quality\n• Risk: FEMA flood zones, CALFIRE fire hazard severity\n• Schools: K-12 ratings, district search, school profiles\n• Demographics: insurance coverage, political lean, age profile\n• Geospatial: address geocoding (used automatically by all tools)\n\nData availability: California and Texas. Fire risk covers California only.\nRequires an iHuus API AI Pro plan — https://ihuus.com/pricing",
+  "author": {
+    "name": "iHuus",
+    "url": "https://ihuus.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihuus/mcp.git"
+  },
+  "homepage": "https://docs.ihuus.com/",
+  "documentation": "https://docs.ihuus.com/",
+  "support": "mailto:contact@ihuus.com",
+  "icon": "assets/icon-light.png",
+  "icons": [
+    { "src": "assets/icon-light.png", "size": "128x128", "theme": "light" },
+    { "src": "assets/icon-dark.png", "size": "128x128", "theme": "dark" }
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"],
+      "env": {
+        "IHUUS_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "tools_generated": true,
+  "prompts_generated": true,
+  "keywords": [
+    "neighborhood",
+    "real-estate",
+    "home-buying",
+    "location-intelligence",
+    "due-diligence",
+    "walkability",
+    "schools",
+    "school-ratings",
+    "flood-risk",
+    "fire-risk",
+    "air-quality",
+    "noise",
+    "demographics",
+    "mcp",
+    "geocoding"
+  ],
+  "license": "MIT",
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  },
+  "user_config": {
+    "api_key": {
+      "type": "string",
+      "title": "iHuus API Key",
+      "description": "Get yours on ihuus.com (requires API AI Pro Plan)",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

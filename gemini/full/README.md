@@ -3,8 +3,8 @@
 All five iHuus intelligence domains in one extension: demographics, environment, risk,
 schools, and vibe. The fastest way to generate a complete neighborhood analysis report.
 
-> **Data availability:** School data covers **California and Texas**. Fire risk covers
-> **California only** (CALFIRE). All other tools have national US coverage.
+> **Data availability:** All tools currently cover **California and Texas**. Fire risk
+> covers **California only** (CALFIRE).
 
 **[Documentation](https://docs.ihuus.com/)** · **[Plans & Pricing](https://ihuus.com/pricing)**
 
@@ -12,31 +12,21 @@ schools, and vibe. The fastest way to generate a complete neighborhood analysis 
 
 ## Setup
 
-```bash
-export IHUUS_API_KEY=your_ihuus_api_key_here
-export GEMINI_API_KEY=your_gemini_api_key_here
-
-gemini -e gemini-extension.json
-```
-
-Activate the skill at the start of your session:
-
-```
-/skill skills/neighborhood-analyst/SKILL.md
-```
+See [`gemini/README.md`](../README.md) for installation instructions.
+Use `full` as the `<domain>` value.
 
 ---
 
 ## Available Tools
 
-| Server | Tools |
-|---|---|
-| `ihuus-demographics` | `insurance-coverage` · `ideological-lean` · `population-profile` |
-| `ihuus-environment` | `noise-levels` · `industrial-proximity` · `air-quality` |
-| `ihuus-risk` | `flood` · `fire` (CA only) |
-| `ihuus-schools` | `search/school-ratings` · `search/districts` · `search/school-by-district` · `school/{nces_id}` |
-| `ihuus-vibe` | `walkability` · `privacy` · `visual-appeal` · `dog-friendliness` · `urban-rural` |
-| `ihuus-geospatial` | `geocode-single` |
+| Server               | Tools                                                                                           |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
+| `ihuus-demographics` | `insurance-coverage` · `ideological-lean` · `population-profile`                                |
+| `ihuus-environment`  | `noise-levels` · `industrial-proximity` · `air-quality`                                         |
+| `ihuus-risk`         | `flood` · `fire` (CA only)                                                                      |
+| `ihuus-schools`      | `search/school-ratings` · `search/districts` · `search/school-by-district` · `school/{nces_id}` |
+| `ihuus-vibe`         | `walkability` · `privacy` · `visual-appeal` · `dog-friendliness` · `urban-rural`                |
+| `ihuus-geospatial`   | `geocode-single`                                                                                |
 
 ---
 
