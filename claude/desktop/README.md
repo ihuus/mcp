@@ -75,15 +75,19 @@ No API keys are sent to any third party — they go directly from your machine t
 
 ## Example Prompts
 
+Try typing a question directly:
+
 ```
 What's the walkability and noise level near 250 Mariposa Ave, Mountain View, CA?
 
 Find top-rated elementary schools within 2 miles of 450 Serra Mall, Stanford, CA.
 
 Is 1100 Congress Ave, Austin, TX at high flood or fire risk?
-
-Give me a full neighborhood report for 250 Mariposa Ave, Mountain View, CA.
 ```
+
+Or use a pre-made MCP prompt: click the **+** button in the chat input → **Connectors**
+→ select **iHuus Neighborhood Report**. Enter an address and get a full HTML
+neighborhood intelligence report.
 
 ---
 
@@ -103,5 +107,6 @@ npm install --production
 mcpb pack . ihuus-neighborhood-intelligence.mcpb
 ```
 
-This produces a new `.mcpb` file in the current directory. Open it to install
+This produces `ihuus-neighborhood-intelligence.mcpb` in the current directory (the
+second argument controls the output filename). Open it to install
 the updated bundle in Claude Desktop.
