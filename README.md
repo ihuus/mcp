@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-brightgreen.svg)](https://modelcontextprotocol.io/)
-[![api_advanced plan](https://img.shields.io/badge/plan-api__advanced-orange.svg)](https://ihuus.com/pricing)
+[![API AI Pro plan](https://img.shields.io/badge/plan-API_AI_Pro-orange.svg)](https://ihuus.com/pricing)
 
 Ready-to-use [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) extensions
 for building AI-powered neighborhood analysis agents. Connect
@@ -27,7 +27,7 @@ any US address — no backend code required.
 
 | Requirement        | Details                                                                                                    |
 | ------------------ | ---------------------------------------------------------------------------------------------------------- |
-| **iHuus API key**  | `api_advanced` plan required — [get one at ihuus.com/pricing](https://ihuus.com/pricing)                   |
+| **iHuus API key**  | `API AI Pro` plan required — [get one at ihuus.com/pricing](https://ihuus.com/pricing)                     |
 | **Gemini CLI**     | For extensions under `gemini/` — [install guide](https://github.com/google-gemini/gemini-cli#installation) |
 | **Claude Desktop** | For the bundle under `claude/` — [download](https://claude.ai/download)                                    |
 

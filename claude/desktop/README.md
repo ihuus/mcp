@@ -6,7 +6,7 @@ risk, air quality, noise, demographics, and more for any US address.
 
 **[Documentation](https://docs.ihuus.com/)** · **[Plans & Pricing](https://ihuus.com/pricing)**
 
-> Requires an `api_advanced` plan — [get one at ihuus.com/pricing](https://ihuus.com/pricing).
+> Requires an `API AI Pro` plan — [get one at ihuus.com/pricing](https://ihuus.com/pricing).
 
 ---
 
@@ -39,11 +39,11 @@ If tools are not appearing or calls fail:
 
 Common issues:
 
-| Symptom                   | Fix                                                                    |
-| ------------------------- | ---------------------------------------------------------------------- |
-| Server shows red / failed | Verify your API key is correct and your `api_advanced` plan is active. |
-| No tools listed           | Restart Claude Desktop. The extension discovers tools on startup.      |
-| Tool calls return errors  | Check the logs in the Developer panel for details.                     |
+| Symptom                   | Fix                                                                  |
+| ------------------------- | -------------------------------------------------------------------- |
+| Server shows red / failed | Verify your API key is correct and your `API AI Pro` plan is active. |
+| No tools listed           | Restart Claude Desktop. The extension discovers tools on startup.    |
+| Tool calls return errors  | Check the logs in the Developer panel for details.                   |
 
 ---
 
