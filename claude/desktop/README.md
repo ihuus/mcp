@@ -84,3 +84,24 @@ Is 1100 Congress Ave, Austin, TX at high flood or fire risk?
 
 Give me a full neighborhood report for 250 Mariposa Ave, Mountain View, CA.
 ```
+
+---
+
+## Building the MCPB Bundle
+
+If you modify the proxy or manifest and need to rebuild:
+
+```bash
+# Install the MCPB CLI (one-time)
+npm install -g @anthropic-ai/mcpb
+
+# Install production dependencies
+cd claude/desktop
+npm install --production
+
+# Pack the bundle
+mcpb pack
+```
+
+This produces a new `mcpb.mcpb` file in the current directory. Open it to install
+the updated bundle in Claude Desktop.
