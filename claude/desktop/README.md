@@ -87,7 +87,8 @@ Is 1100 Congress Ave, Austin, TX at high flood or fire risk?
 
 Or use a pre-made MCP prompt: click the **+** button in the chat input → **Connectors**
 → select **iHuus Neighborhood Report**. Enter an address and get a full HTML
-neighborhood intelligence report.
+neighborhood intelligence report. See the full prompt in
+[`prompts/neighborhood_report.md`](prompts/neighborhood_report.md).
 
 ---
 
